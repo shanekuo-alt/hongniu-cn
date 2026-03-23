@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <HeroMascot className="relative order-1 lg:order-2">
               <div className="relative z-10 w-full aspect-square rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] lg:rotate-3 border-8 border-white">
-                <Image alt="红牛吉祥物" className="object-cover" src="/assets/mascot-promo-1.png" fill sizes="(max-width: 1024px) 100vw, 50vw" priority />
+                <Image alt="红牛吉祥物" className="object-cover" src="/assets/Hero_Visual.png" fill sizes="(max-width: 1024px) 100vw, 50vw" priority />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-secondary-fixed text-on-secondary-fixed px-8 py-6 rounded-3xl shadow-2xl float-bob z-20">
                 <p className="font-headline font-black text-3xl">繁荣就在眼前！</p>
@@ -185,7 +185,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center relative z-10">
             <ScaleReveal className="relative group">
               <div className="relative rounded-[4rem] shadow-2xl overflow-hidden border-8 border-white w-full aspect-[4/5]">
-                <Image alt="红牛吉祥物" className="object-cover object-top" src="/assets/mascot-promo-2.png" fill sizes="(max-width: 1024px) 100vw, 50vw" />
+                <Image alt="红牛吉祥物" className="object-cover" src="/assets/Bottom_Visual.png" fill sizes="(max-width: 1024px) 100vw, 50vw" />
               </div>
               <div className="absolute -top-10 -right-10 w-64 h-64 bg-secondary-container rounded-full blur-[100px] opacity-40" />
             </ScaleReveal>
