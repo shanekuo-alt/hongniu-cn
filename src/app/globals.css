@@ -114,20 +114,93 @@ body {
   filter: contrast(1.1) brightness(1.1);
 }
 
+/* ========== NAV SCROLL ========== */
+
+.nav-logo {
+  width: 80px;
+  height: 80px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+[data-scrolled] .nav-logo {
+  width: 48px;
+  height: 48px;
+}
+
 /* ========== DELIGHT ANIMATIONS ========== */
 
 @keyframes float-bob {
   0%, 100% { transform: rotate(-6deg) translateY(0); }
-  50% { transform: rotate(-6deg) translateY(-4px); }
+  50% { transform: rotate(-6deg) translateY(-8px); }
 }
 
 .float-bob {
   animation: float-bob 6s ease-in-out infinite;
 }
 
+/* Button glow hover — replaces generic scale-105 */
+.btn-glow {
+  position: relative;
+  transition: box-shadow 0.25s ease, transform 0.08s ease;
+}
+
+.btn-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(186, 0, 32, 0.3);
+}
+
+.btn-glow:hover::after {
+  opacity: 1;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 8px 40px rgba(186, 0, 32, 0.35);
+}
+
+/* Gold-accent button variant */
+.btn-glow-gold::after {
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 201, 101, 0.35);
+}
+
+.btn-glow-gold:hover {
+  box-shadow: 0 8px 40px rgba(255, 201, 101, 0.3);
+}
+
+/* Ghost button hover — subtle fill sweep */
+.btn-ghost {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease, transform 0.08s ease;
+}
+
+.btn-ghost::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  border-radius: inherit;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: -1;
+}
+
+.btn-ghost:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-ghost:hover {
+  color: var(--color-on-primary);
+}
+
 .btn-press:active {
-  transform: translateY(2px) scale(0.98);
-  box-shadow: none;
+  transform: translateY(2px) scale(0.98) !important;
+  box-shadow: none !important;
   transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 
@@ -137,4 +210,26 @@ body {
 
 .card-lift:hover {
   transform: translateY(-4px);
+}
+
+/* ========== REDUCED MOTION ========== */
+
+@media (prefers-reduced-motion: reduce) {
+  .float-bob {
+    animation: none;
+  }
+
+  .btn-press:active {
+    transform: none !important;
+  }
+
+  .card-lift:hover {
+    transform: none;
+  }
+
+  .btn-glow,
+  .btn-glow::after,
+  .btn-ghost::before {
+    transition: none;
+  }
 }

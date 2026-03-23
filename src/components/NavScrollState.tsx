@@ -19,6 +19,7 @@ export default function NavScrollState({ children }: NavScrollStateProps) {
 
   return (
     <nav
+      data-scrolled={scrolled || undefined}
       className={`fixed top-0 w-full z-50 backdrop-blur-xl border-b border-surface-container-high transition-all duration-300 ${
         scrolled ? "bg-white/90 shadow-md h-16" : "bg-white/60 h-20"
       }`}

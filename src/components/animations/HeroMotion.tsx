@@ -66,7 +66,6 @@ export function HeroMascot({ children, className }: HeroWrapperProps) {
       initial={{ opacity: 0, scale: 0.88 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
-        duration: 0.7,
         delay: 0.1,
         type: "spring",
         stiffness: 200,
