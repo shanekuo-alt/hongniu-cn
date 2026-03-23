@@ -185,7 +185,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center relative z-10">
             <ScaleReveal className="relative group">
               <div className="relative rounded-[4rem] shadow-2xl overflow-hidden border-8 border-white w-full aspect-[4/5]">
-                <Image alt="红牛吉祥物" className="object-cover" src="/assets/mascot-promo-2.png" fill sizes="(max-width: 1024px) 100vw, 50vw" />
+                <Image alt="红牛吉祥物" className="object-cover object-top" src="/assets/mascot-promo-2.png" fill sizes="(max-width: 1024px) 100vw, 50vw" />
               </div>
               <div className="absolute -top-10 -right-10 w-64 h-64 bg-secondary-container rounded-full blur-[100px] opacity-40" />
             </ScaleReveal>
