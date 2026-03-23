@@ -45,10 +45,10 @@ export default function Home() {
                 为中国小微企业量身定制的广告方案。您的本地市场，您的语言，您的计划。
               </HeroSubcopy>
               <HeroCTAs className="flex flex-col sm:flex-row gap-6 pt-4">
-                <button className="btn-press btn-glow bg-primary text-on-primary px-10 py-5 rounded-full text-xl font-black transition-all shadow-2xl shadow-primary/30">
+                <button className="btn-press bg-primary text-on-primary px-10 py-5 rounded-full text-xl font-black hover:scale-105 transition-all shadow-2xl shadow-primary/30">
                   立即开始
                 </button>
-                <button className="btn-press btn-ghost bg-surface-container-highest/50 backdrop-blur-sm text-on-surface px-10 py-5 rounded-full text-xl font-bold">
+                <button className="btn-press bg-surface-container-highest/50 backdrop-blur-sm text-on-surface px-10 py-5 rounded-full text-xl font-bold hover:bg-surface-container-high transition-all">
                   了解运作方式
                 </button>
               </HeroCTAs>
@@ -283,7 +283,7 @@ export default function Home() {
             </FadeUp>
             <FaqAccordion />
             <ScaleReveal delay={0.2} className="mt-24 text-center">
-              <button className="btn-press btn-glow bg-primary text-on-primary px-16 py-8 rounded-full text-3xl font-black transition-all shadow-2xl shadow-primary/40">
+              <button className="btn-press bg-primary text-on-primary px-16 py-8 rounded-full text-3xl font-black hover:scale-105 transition-all shadow-2xl shadow-primary/40">
                 立即启动您的引擎
               </button>
             </ScaleReveal>
