@@ -21,7 +21,7 @@ export default function Home() {
           <a className="text-neutral-600 hover:text-primary transition-colors" href="#about">关于我们</a>
           <a className="text-neutral-600 hover:text-primary transition-colors" href="#faq">常见问题</a>
         </div>
-        <button className="btn-press btn-glow bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-primary/20">
+        <button className="btn-press bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold hover:scale-105 transition-all shadow-lg shadow-primary/20">
           立即开始
         </button>
       </NavScrollState>
