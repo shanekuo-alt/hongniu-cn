@@ -21,7 +21,7 @@ export default function Home() {
           <a className="text-neutral-600 hover:text-primary transition-colors" href="#about">关于我们</a>
           <a className="text-neutral-600 hover:text-primary transition-colors" href="#faq">常见问题</a>
         </div>
-        <button className="btn-press bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold hover:scale-105 transition-all shadow-lg shadow-primary/20">
+        <button type="button" className="btn-press bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold hover:scale-105 transition-all shadow-lg shadow-primary/20">
           立即开始
         </button>
       </NavScrollState>
@@ -45,17 +45,17 @@ export default function Home() {
                 为中国小微企业量身定制的广告方案。您的本地市场，您的语言，您的计划。
               </HeroSubcopy>
               <HeroCTAs className="flex flex-col sm:flex-row gap-6 pt-4">
-                <button className="btn-press bg-primary text-on-primary px-10 py-5 rounded-full text-xl font-black hover:scale-105 transition-all shadow-2xl shadow-primary/30">
+                <button type="button" className="btn-press bg-primary text-on-primary px-10 py-5 rounded-full text-xl font-black hover:scale-105 transition-all shadow-2xl shadow-primary/30">
                   立即开始
                 </button>
-                <button className="btn-press bg-surface-container-highest/50 backdrop-blur-sm text-on-surface px-10 py-5 rounded-full text-xl font-bold hover:bg-surface-container-high transition-all">
+                <button type="button" className="btn-press bg-surface-container-highest/50 backdrop-blur-sm text-on-surface px-10 py-5 rounded-full text-xl font-bold hover:bg-surface-container-high transition-all">
                   了解运作方式
                 </button>
               </HeroCTAs>
             </div>
             <HeroMascot className="relative order-1 lg:order-2">
               <div className="relative z-10 w-full aspect-square rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] lg:rotate-3 border-8 border-white">
-                <Image alt="红牛吉祥物" className="object-cover" src="/assets/mascot-promo-1.png" fill sizes="(max-width: 1024px) 100vw, 50vw" />
+                <Image alt="红牛吉祥物" className="object-cover" src="/assets/mascot-promo-1.png" fill sizes="(max-width: 1024px) 100vw, 50vw" priority />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-secondary-fixed text-on-secondary-fixed px-8 py-6 rounded-3xl shadow-2xl float-bob z-20">
                 <p className="font-headline font-black text-3xl">繁荣就在眼前！</p>
@@ -104,10 +104,10 @@ export default function Home() {
               <div className="mt-24 bg-on-surface text-surface-container-lowest p-12 rounded-[4rem] flex flex-col lg:flex-row items-center justify-between gap-12 border-l-[12px] border-secondary-fixed overflow-hidden relative">
                 <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: "url('/assets/gold-pattern-texture.png')", backgroundSize: "200px" }} />
                 <div className="max-w-2xl relative z-10">
-                  <h4 className="text-4xl font-black font-headline mb-6 text-white">红牛差异化优势</h4>
+                  <h3 className="text-4xl font-black font-headline mb-6 text-white">红牛差异化优势</h3>
                   <p className="text-xl opacity-80 leading-relaxed">我们不只是&ldquo;投放广告&rdquo;。我们为您打造一台通往繁荣的引擎，它说着您所在街道、城市以及客户的语言。</p>
                 </div>
-                <button className="btn-press btn-glow btn-glow-gold relative z-10 bg-secondary-fixed text-on-secondary-fixed px-12 py-6 rounded-full font-black text-2xl whitespace-nowrap transition-transform shadow-xl">
+                <button type="button" className="btn-press btn-glow btn-glow-gold relative z-10 bg-secondary-fixed text-on-secondary-fixed px-12 py-6 rounded-full font-black text-2xl whitespace-nowrap transition-transform shadow-xl">
                   加入这一趋势
                 </button>
               </div>
@@ -128,14 +128,14 @@ export default function Home() {
                 <SlideIn direction="left">
                   <div className="bg-surface-container-low/80 backdrop-blur-md p-12 rounded-[3rem] border-2 border-transparent hover:border-primary transition-all">
                     <div className="w-16 h-16 bg-primary text-on-primary rounded-2xl flex items-center justify-center font-black text-3xl mb-8 shadow-xl">1</div>
-                    <h4 className="text-3xl font-black font-headline mb-4">业务基础</h4>
+                    <h3 className="text-3xl font-black font-headline mb-4">业务基础</h3>
                     <p className="text-xl text-on-surface-variant leading-relaxed">告诉我们您的业务内容。无需复杂表格，只需基本事实。</p>
                   </div>
                 </SlideIn>
                 <SlideIn direction="right">
                   <div className="bg-surface-container-low/80 backdrop-blur-md p-12 rounded-[3rem] border-2 border-transparent hover:border-primary transition-all md:translate-y-24">
                     <div className="w-16 h-16 bg-primary text-on-primary rounded-2xl flex items-center justify-center font-black text-3xl mb-8 shadow-xl">2</div>
-                    <h4 className="text-3xl font-black font-headline mb-4">营销目标</h4>
+                    <h3 className="text-3xl font-black font-headline mb-4">营销目标</h3>
                     <p className="text-xl text-on-surface-variant leading-relaxed">获取新客？增强忠诚度？限时抢购？定义今日的成功蓝图。</p>
                   </div>
                 </SlideIn>
@@ -144,14 +144,14 @@ export default function Home() {
                 <SlideIn direction="left">
                   <div className="bg-surface-container-low/80 backdrop-blur-md p-12 rounded-[3rem] border-2 border-transparent hover:border-primary transition-all">
                     <div className="w-16 h-16 bg-primary text-on-primary rounded-2xl flex items-center justify-center font-black text-3xl mb-8 shadow-xl">3</div>
-                    <h4 className="text-3xl font-black font-headline mb-4">地域定向</h4>
+                    <h3 className="text-3xl font-black font-headline mb-4">地域定向</h3>
                     <p className="text-xl text-on-surface-variant leading-relaxed">精准定位您的社区，或瞄准全国范围内的多个城市层级。</p>
                   </div>
                 </SlideIn>
                 <SlideIn direction="right">
                   <div className="bg-surface-container-low/80 backdrop-blur-md p-12 rounded-[3rem] border-2 border-transparent hover:border-primary transition-all md:translate-y-24">
                     <div className="w-16 h-16 bg-primary text-on-primary rounded-2xl flex items-center justify-center font-black text-3xl mb-8 shadow-xl">4</div>
-                    <h4 className="text-3xl font-black font-headline mb-4">受众定向</h4>
+                    <h3 className="text-3xl font-black font-headline mb-4">受众定向</h3>
                     <p className="text-xl text-on-surface-variant leading-relaxed">AI 驱动的人物画像匹配，识别出真正会产生购买行为的客户。</p>
                   </div>
                 </SlideIn>
@@ -160,7 +160,7 @@ export default function Home() {
                 <SlideIn direction="left">
                   <div className="bg-surface-container-low/80 backdrop-blur-md p-12 rounded-[3rem] border-2 border-transparent hover:border-primary transition-all">
                     <div className="w-16 h-16 bg-primary text-on-primary rounded-2xl flex items-center justify-center font-black text-3xl mb-8 shadow-xl">5</div>
-                    <h4 className="text-3xl font-black font-headline mb-4">策略生成</h4>
+                    <h3 className="text-3xl font-black font-headline mb-4">策略生成</h3>
                     <p className="text-xl text-on-surface-variant leading-relaxed">数秒内审阅为您预算定制的完整营销蓝图。</p>
                   </div>
                 </SlideIn>
@@ -169,7 +169,7 @@ export default function Home() {
                     <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: "url('/assets/gold-pattern-texture.png')", backgroundSize: "150px" }} />
                     <div className="relative z-10">
                       <div className="w-16 h-16 bg-white text-primary rounded-2xl flex items-center justify-center font-black text-3xl mb-8">6</div>
-                      <h4 className="text-3xl font-black font-headline mb-4">执行与优化</h4>
+                      <h3 className="text-3xl font-black font-headline mb-4">执行与优化</h3>
                       <p className="text-xl opacity-90 leading-relaxed">一键发布，让红牛实时为您优化营销表现。</p>
                     </div>
                   </div>
@@ -205,7 +205,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-4xl text-on-primary-container">timer</span>
                     </div>
                     <div>
-                      <h4 className="text-2xl font-black font-headline mb-2">节省时间</h4>
+                      <h3 className="text-2xl font-black font-headline mb-2">节省时间</h3>
                       <p className="text-lg text-on-surface-variant">自动化 90% 的营销工作量，专注于经营您的业务。</p>
                     </div>
                   </div>
@@ -216,7 +216,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-4xl text-on-secondary-container">psychology</span>
                     </div>
                     <div>
-                      <h4 className="text-2xl font-black font-headline mb-2">专家建议</h4>
+                      <h3 className="text-2xl font-black font-headline mb-2">专家建议</h3>
                       <p className="text-lg text-on-surface-variant">基于针对中国消费格局的数十亿数据点获取策略建议。</p>
                     </div>
                   </div>
@@ -227,7 +227,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-4xl text-on-primary-container">payments</span>
                     </div>
                     <div>
-                      <h4 className="text-2xl font-black font-headline mb-2">节省资金</h4>
+                      <h3 className="text-2xl font-black font-headline mb-2">节省资金</h3>
                       <p className="text-lg text-on-surface-variant">停止在无效渠道浪费预算。每一分钱都为转化而优化。</p>
                     </div>
                   </div>
@@ -250,7 +250,7 @@ export default function Home() {
                 <div className="card-lift p-16 rounded-[4rem] bg-neutral-900/50 backdrop-blur-md border border-neutral-800 hover:border-primary transition-all group overflow-hidden relative">
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity" style={{ backgroundImage: "url('/assets/gold-pattern-texture.png')", backgroundSize: "150px" }} />
                   <span className="material-symbols-outlined text-7xl text-primary mb-10 block group-hover:scale-110 transition-transform relative z-10">forum</span>
-                  <h4 className="text-3xl font-black font-headline mb-6 relative z-10">对话式设计</h4>
+                  <h3 className="text-3xl font-black font-headline mb-6 relative z-10">对话式设计</h3>
                   <p className="text-xl opacity-60 leading-relaxed relative z-10">像与合伙人交谈一样与红牛对话。没有技术术语，只有结果导向的沟通。</p>
                 </div>
               </StaggerItem>
@@ -258,7 +258,7 @@ export default function Home() {
                 <div className="card-lift p-16 rounded-[4rem] bg-neutral-900/50 backdrop-blur-md border border-neutral-800 hover:border-secondary-fixed transition-all group overflow-hidden relative">
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity" style={{ backgroundImage: "url('/assets/gold-pattern-texture.png')", backgroundSize: "150px" }} />
                   <span className="material-symbols-outlined text-7xl text-secondary-fixed mb-10 block group-hover:scale-110 transition-transform relative z-10" style={{ fontVariationSettings: "'FILL' 1" }}>verified_user</span>
-                  <h4 className="text-3xl font-black font-headline mb-6 relative z-10">建立在信任之上</h4>
+                  <h3 className="text-3xl font-black font-headline mb-6 relative z-10">建立在信任之上</h3>
                   <p className="text-xl opacity-60 leading-relaxed relative z-10">透明是我们的核心。清晰了解您的资金去向以及每项决策的依据。</p>
                 </div>
               </StaggerItem>
@@ -266,7 +266,7 @@ export default function Home() {
                 <div className="card-lift p-16 rounded-[4rem] bg-neutral-900/50 backdrop-blur-md border border-neutral-800 hover:border-primary transition-all group overflow-hidden relative">
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity" style={{ backgroundImage: "url('/assets/gold-pattern-texture.png')", backgroundSize: "150px" }} />
                   <span className="material-symbols-outlined text-7xl text-primary mb-10 block group-hover:scale-110 transition-transform relative z-10">group</span>
-                  <h4 className="text-3xl font-black font-headline mb-6 relative z-10">灵活且人性化</h4>
+                  <h3 className="text-3xl font-black font-headline mb-6 relative z-10">灵活且人性化</h3>
                   <p className="text-xl opacity-60 leading-relaxed relative z-10">有温度的 AI。我们能根据您的个人目标和当地季节性变化即时调整。</p>
                 </div>
               </StaggerItem>
@@ -283,7 +283,7 @@ export default function Home() {
             </FadeUp>
             <FaqAccordion />
             <ScaleReveal delay={0.2} className="mt-24 text-center">
-              <button className="btn-press bg-primary text-on-primary px-16 py-8 rounded-full text-3xl font-black hover:scale-105 transition-all shadow-2xl shadow-primary/40">
+              <button type="button" className="btn-press bg-primary text-on-primary px-16 py-8 rounded-full text-3xl font-black hover:scale-105 transition-all shadow-2xl shadow-primary/40">
                 立即启动您的引擎
               </button>
             </ScaleReveal>
@@ -305,7 +305,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h5 className="text-primary font-black text-xl mb-8 font-headline">导航</h5>
+            <div className="text-primary font-black text-xl mb-8 font-headline">导航</div>
             <ul className="space-y-6 font-headline text-lg">
               <li><a className="text-neutral-400 hover:text-primary transition-colors" href="#how-it-works">如何运作</a></li>
               <li><a className="text-neutral-400 hover:text-primary transition-colors" href="#about">关于我们</a></li>
@@ -313,7 +313,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h5 className="text-primary font-black text-xl mb-8 font-headline">法律</h5>
+            <div className="text-primary font-black text-xl mb-8 font-headline">法律</div>
             <ul className="space-y-6 font-headline text-lg">
               <li><a className="text-neutral-400 hover:text-primary transition-colors" href="#">隐私政策</a></li>
               <li><a className="text-neutral-400 hover:text-primary transition-colors" href="#">服务条款</a></li>
@@ -321,7 +321,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h5 className="text-primary font-black text-xl mb-8 font-headline">社交</h5>
+            <div className="text-primary font-black text-xl mb-8 font-headline">社交</div>
             <div className="flex gap-6 mb-10">
               <div className="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-all">
                 <span className="material-symbols-outlined">alternate_email</span>

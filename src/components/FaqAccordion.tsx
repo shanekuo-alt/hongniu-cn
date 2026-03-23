@@ -39,7 +39,10 @@ export default function FaqAccordion() {
           className="bg-surface-container-low/90 backdrop-blur-sm rounded-[2rem] p-4 hover:bg-surface-container transition-colors"
         >
           <button
+            type="button"
             onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
+            aria-expanded={openIndex === i}
+            aria-controls={`faq-panel-${i}`}
             className={`w-full text-left p-6 md:p-8 flex items-center justify-between ${
               faq.accent ? "border-l-8 border-secondary-fixed" : ""
             }`}
@@ -56,6 +59,8 @@ export default function FaqAccordion() {
           <AnimatePresence initial={false}>
             {openIndex === i && (
               <motion.div
+                id={`faq-panel-${i}`}
+                role="region"
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: "auto", opacity: 1 }}
                 exit={{ height: 0, opacity: 0 }}

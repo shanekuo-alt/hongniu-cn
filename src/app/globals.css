@@ -58,9 +58,9 @@
   --color-on-error: #ffefec;
   --color-on-error-container: #520c00;
 
-  --font-headline: var(--font-epilogue), sans-serif;
-  --font-body: var(--font-manrope), sans-serif;
-  --font-label: var(--font-manrope), sans-serif;
+  --font-headline: var(--font-epilogue), "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-body: var(--font-manrope), "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-label: var(--font-manrope), "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
 html {

@@ -15,8 +15,37 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hongniu-cn.vercel.app"),
   title: "红牛 | 中国企业的 AI 营销顾问",
-  description: "为中国小微企业量身定制的广告方案。您的本地市场，您的语言，您的计划。",
+  description:
+    "为中国小微企业量身定制的广告方案。您的本地市场，您的语言，您的计划。",
+  robots: { index: true, follow: true },
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "红牛 | 中国企业的 AI 营销顾问",
+    description:
+      "为中国小微企业量身定制的广告方案。您的本地市场，您的语言，您的计划。",
+    url: "https://hongniu-cn.vercel.app",
+    siteName: "红牛",
+    locale: "zh_CN",
+    type: "website",
+    // TODO: Replace with dedicated 1200x630 OG image once final copy is locked
+    images: [
+      {
+        url: "/assets/hongniu-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "红牛 AI 营销平台",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "红牛 | 中国企业的 AI 营销顾问",
+    description:
+      "为中国小微企业量身定制的广告方案。您的本地市场，您的语言，您的计划。",
+    images: ["/assets/hongniu-logo.png"],
+  },
 };
 
 export default function RootLayout({
